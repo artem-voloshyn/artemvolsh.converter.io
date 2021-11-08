@@ -1,0 +1,273 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+input, textarea, select {
+	border: none;
+}
+
+figure {
+  padding: 0;
+  margin: 0;
+}
+
+/* == RESET CSS == */
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: white;
+
+	width: 100vw;
+	overflow: hidden;
+  /* overflow: hidden; */
+  background: #2a2a2a;
+}
+
+h1 {
+  font-size: 5vw;
+}
+
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+#section-holder {
+  display: flex;
+  flex-direction: column;
+
+	font-size: 3vw;
+  color: #ffed4c;
+}
+
+.select {
+  display: flex;
+	
+	justify-content: center;
+	align-items: center;
+	gap: 1vw;
+
+}
+
+.converter-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+
+	width: 100vw;
+	height: 100vh;
+	
+  margin: 20px;
+}
+
+.converter-wrapper > * {
+  margin-bottom: 20px;
+}
+
+#value-input::-webkit-outer-spin-button,
+#value-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#value-input:focus,
+.select-style:focus {
+  outline: none;
+}
+
+#value-input,
+.select-style {
+	text-align: center;
+		
+	color: white;
+	font-size: calc(1rem + 6 * ((100vw - 20rem) / 680));;
+
+	background: inherit;
+	border-bottom: 2px solid #95bb4a;
+}
+
+.select-style {
+	font-size: calc(1rem + 6 * ((100vw - 20rem) / 680));
+	width: max-content;
+}
+
+/* Option styles */
+.select-style option {
+	color: #95bb4a;
+	background: #2a2a2a;
+}
+
+#convert-button {
+  padding: 10px 20px;
+  position: relative;
+  display: inline-block;
+
+	font-size: 3vw;
+  color: white;
+  background-color: #7fa650;
+
+  overflow: hidden;
+  border: none;
+  border-radius: 0.3rem;
+
+  box-shadow: 0px 3px 0px 0 #537133, 0px 0px 8px 3px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 0.5px 0 #2a2a2a;
+}
+
+#convert-button:hover {
+  background-color: #95bb4a;
+  box-shadow: 0px 3px 0px 0 #537133, 0px 0px 8px 3px rgba(149, 187, 74, 0.25);
+}
+
+#convert-button span {
+  position: absolute;
+  transform: translate(-50%, -50%);
+
+  pointer-events: none;
+
+  background: #fff;
+  border-radius: 50%;
+
+  animation: animate 0.7s ease-out infinite;
+}
+@keyframes animate {
+  0% {
+    width: 0px;
+    height: 0px;
+
+    opacity: 0.8;
+  }
+  100% {
+    width: 200px;
+    height: 200px;
+
+    opacity: 0;
+  }
+}

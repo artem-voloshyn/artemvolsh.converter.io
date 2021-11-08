@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <script defer type="text/javascript" src="/js/script.js"></script>
+  </head>
+  <body>
+    <div class="converter-wrapper">
+      <h1 class="main-out">Converter</h1>
+      <input
+        type="number"
+        name="coverter-input"
+        class="input"
+        id="value-input"
+      />
+      <div class="select">
+        <select class="select-style" name="measure1" id="measure1">
+          <option value="KG">Kilograms</option>
+          <option value="GR">Grams</option>
+          <option value="MG">Miligrams</option>
+          <option value="OZ">Ounces</option>
+          <option value="CR">Carats</option>
+          <option value="PD">Pounds</option>
+        </select>
+        <label for="to-label">to</label>
+        <select class="select-style" name="measure2" id="measure2"></select>
+      </div>
+      <button id="convert-button">Convert</button>
+      <div id="section-holder"></div>
+    </div>
+  </body>
+</html>
