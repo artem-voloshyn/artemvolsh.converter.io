@@ -207,7 +207,7 @@ button {
 	text-align: center;
 		
 	color: white;
-	font-size: calc(1rem + 6 * ((100vw - 20rem) / 680));;
+	font-size: calc(1rem + 6 * ((100vw - 20rem) / 680));
 
 	background: inherit;
 	border-bottom: 2px solid #95bb4a;
